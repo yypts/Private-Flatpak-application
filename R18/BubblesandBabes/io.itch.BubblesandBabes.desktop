@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=BubblesandBabes
+Name[en]=BubblesandBabes
+Name[zh]=泡泡与宝贝
+Icon=io.itch.BubblesandBabes
+Exec=BubblesandBabes.sh
+Categories=Game;

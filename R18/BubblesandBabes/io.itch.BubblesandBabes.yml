@@ -1,0 +1,26 @@
+app-id: io.itch.BubblesandBabes
+
+runtime: org.freedesktop.Platform//25.08
+
+sdk: org.freedesktop.Sdk//25.08
+
+command: BubblesandBabes.sh
+
+finish-args:
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --device=dri
+  - --persist=.renpy
+
+modules:
+  - name: gamemove
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/bin
+      - cp -r BubblesandBabes-Demo-pc/** /app/bin/
+      - install -Dm644 io.itch.BubblesandBabes.png /app/share/icons/hicolor/256x256/apps/io.itch.BubblesandBabes.png
+      - install -Dm644 io.itch.BubblesandBabes.desktop /app/share/applications/io.itch.BubblesandBabes.desktop
+
+    sources:
+      - type: dir
+        path: .
