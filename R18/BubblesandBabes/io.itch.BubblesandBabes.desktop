@@ -5,4 +5,7 @@ Name[en]=BubblesandBabes
 Name[zh]=泡泡与宝贝
 Icon=io.itch.BubblesandBabes
 Exec=BubblesandBabes.sh
+Comment=a game of itch
+Comment[zh]=位于itch的GalGame游戏
 Categories=Game;
+Terminal=false
